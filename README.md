@@ -23,21 +23,21 @@ The project includes implementing key methods in the HashNode and HashMap classe
 
 ### Implementation Details
 1. HashNode Class Methods
-  1. addValue(string): Adds a new word to the dynamically allocated values array.
-  2. dblArray(): Doubles the size of the values array when full.
-  3. getRandValue(): Randomly selects a word from the values array for text generation.
+  - addValue(string): Adds a new word to the dynamically allocated values array.
+  - dblArray(): Doubles the size of the values array when full.
+  - getRandValue(): Randomly selects a word from the values array for text generation.
 2. HashMap Class Methods
-  1. Constructor: Initializes the Hashmap with a base size.
-  2. addKeyValue(string, string): Adds a key-value pair where the key is a word and the value is a list of possible next words.
-  3. getIndex(string): Determines the index of a key using the hash function.
+  - Constructor: Initializes the Hashmap with a base size.
+  - addKeyValue(string, string): Adds a key-value pair where the key is a word and the value is a list of possible next words.
+  - getIndex(string): Determines the index of a key using the hash function.
 3. Hash Functions:
-  1. calcHash1(string): First hash function for indexing.
-  2. calcHash2(string): Second hash function for indexing (different approach for comparison).
+  - calcHash1(string): First hash function for indexing.
+  - calcHash2(string): Second hash function for indexing (different approach for comparison).
 4. Collision Handling:
-  1. coll1(int, int, string): First collision resolution strategy.
-  2. coll2(int, int, string): Second collision resolution strategy.
-  3. getClosestPrime(): Finds the closest prime number for resizing.
-  4. rehash(): Resizes and redistributes keys in the Hashmap when load factor exceeds 70%.
+  - coll1(int, int, string): First collision resolution strategy.
+  - coll2(int, int, string): Second collision resolution strategy.
+  - getClosestPrime(): Finds the closest prime number for resizing.
+  - rehash(): Resizes and redistributes keys in the Hashmap when load factor exceeds 70%.
 
 ### Hashing and Collision Resolution
 ##### Collision Handling Methods
